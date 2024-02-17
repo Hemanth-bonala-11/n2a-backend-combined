@@ -34,6 +34,8 @@ app.use(fileUpload({
     useTempFiles: true,
     tempFileDir: "/temp/"
 }))
+app.use(express.static(path.join(process.env.BASE_DIR, 'public/portfolio/build/static')));
+app.use(express.static(path.join(process.env.BASE_DIR, 'public/n2a/build/static')));
 
 
 app.use("/api/v1/user", userRoutes);
