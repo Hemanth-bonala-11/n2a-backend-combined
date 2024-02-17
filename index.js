@@ -9,7 +9,8 @@ const profileRoutes = require('./routes/Profile')
 const database = require('./config/database')
 const cloudinary = require('./config/cloudinary');
 const multiTenant = require('./controllers/MultiTenancy')
-const cookieParser = require('cookie-parser')
+const cookieParser = require('cookie-parser');
+const path = require('path')
 
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
